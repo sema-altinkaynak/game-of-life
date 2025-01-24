@@ -281,9 +281,17 @@
                         <version>3.2.1</version> <!-- Version mise à jour -->
                         <executions>
                             <execution>
+                                <id>enforce-versions</id>
                                 <goals>
                                     <goal>enforce</goal>
                                 </goals>
+                                <configuration>
+                                    <rules>
+                                        <requireMavenVersion>
+                                            <version>[3.6,)</version>
+                                        </requireMavenVersion>
+                                    </rules>
+                                </configuration>
                             </execution>
                         </executions>
                     </plugin>
@@ -383,9 +391,17 @@
                         <version>3.2.1</version> <!-- Version mise à jour -->
                         <executions>
                             <execution>
+                                <id>enforce-versions</id>
                                 <goals>
                                     <goal>enforce</goal>
                                 </goals>
+                                <configuration>
+                                    <rules>
+                                        <requireMavenVersion>
+                                            <version>[3.6,)</version>
+                                        </requireMavenVersion>
+                                    </rules>
+                                </configuration>
                             </execution>
                         </executions>
                     </plugin>
